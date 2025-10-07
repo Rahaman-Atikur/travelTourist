@@ -17,5 +17,9 @@ const routes: RouteObject[] = [
     path: "/login",
     element: <Login></Login>,
   },
+  {
+    path: "/register",
+    element: <Register></Register>,
+  },
 ];
 export const router = createBrowserRouter(routes);

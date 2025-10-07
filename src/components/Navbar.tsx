@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
         <NavLink className="text-xl" to="/news">News</NavLink>
         <NavLink className="text-xl" to="/destination">Destination</NavLink>
         <NavLink className="text-xl" to="/blog">Blog</NavLink>
-        <NavLink className="text-xl" to="contact">Contact</NavLink>
+        <NavLink className="text-xl" to="/">Home</NavLink>
         <NavLink to="login">Login</NavLink>
       </div>
       {/* Card */}
