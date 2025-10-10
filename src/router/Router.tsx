@@ -9,10 +9,7 @@ const routes: RouteObject[] = [
   {
     path: "/",
     element: <Home></Home>,
-    // children: [
-    //   { path: "/login", element: <Login></Login> },
-    //   { path: "/register", element: <Register></Register> },
-    // ],
+    
   },
   {
     path: "/login",
@@ -25,6 +22,7 @@ const routes: RouteObject[] = [
   {
     path: "/destination",
     element: <Destination></Destination>,
+    loader:()=> fetch("/data.json")
   },
 ];
 export const router = createBrowserRouter(routes);
