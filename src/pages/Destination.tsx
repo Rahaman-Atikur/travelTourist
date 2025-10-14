@@ -39,9 +39,11 @@ const Destination: React.FC = () => {
         </NavLink>
         <NavLink to="login">Login</NavLink>
       </div>
-      {data?.map((singleData) => (
-        <Card key={singleData.id} singleData={singleData}></Card>
-      ))}
+      <div className="grid grid-cols-2 gap-4">
+        {data?.map((singleData) => (
+          <Card key={singleData.id} singleData={singleData}></Card>
+        ))}
+      </div>
     </div>
   );
 };
