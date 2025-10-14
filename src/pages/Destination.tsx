@@ -1,7 +1,16 @@
 // import React from 'react';
 import { NavLink, useLoaderData } from "react-router";
-const Destination = () => {
-  const data = useLoaderData();
+import Card from "../components/Card";
+import type React from "react";
+interface DestinationData {
+  id: number;
+  name: string;
+  image: string;
+  description: string;
+  [key: string]: unknown;
+}
+const Destination: React.FC = () => {
+  const data = useLoaderData() as DestinationData[];
   console.log(data);
   return (
     <div>
@@ -30,6 +39,9 @@ const Destination = () => {
         </NavLink>
         <NavLink to="login">Login</NavLink>
       </div>
+      {data?.map((singleData) => (
+        <Card key={singleData.id} singleData={singleData}></Card>
+      ))}
     </div>
   );
 };

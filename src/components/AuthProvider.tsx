@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 const AuthProvider: React.FC = () => {
   useEffect(() => {
     console.log("I am from body of useEffect");
@@ -9,5 +8,4 @@ const AuthProvider: React.FC = () => {
   }, []);
   return <div></div>;
 };
-
 export default AuthProvider;
