@@ -13,7 +13,7 @@ const Card: React.FC<CardProps> = ({ singleData }) => {
   console.log(singleData);
   return (
     <div>
-      <div className="card bg-base-100 image-full w-96 shadow-sm mx-auto mt-5">
+      <div className="card bg-base-100 image-full w-96 shadow-sm mx-auto mt-5 brightness-300">
         <figure>
           <img src={singleData.image} alt="Shoes" />
         </figure>

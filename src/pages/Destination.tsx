@@ -1,4 +1,3 @@
-// import React from 'react';
 import { NavLink, useLoaderData } from "react-router";
 import Card from "../components/Card";
 import type React from "react";
@@ -9,6 +8,7 @@ interface DestinationData {
   description: string;
   [key: string]: unknown;
 }
+
 const Destination: React.FC = () => {
   const data = useLoaderData() as DestinationData[];
   console.log(data);
@@ -17,7 +17,7 @@ const Destination: React.FC = () => {
       <h2>Choose A Destination</h2>
       <div className="flex justify-around content-center relative pt-20 text-black ">
         <p className="text-4xl font-extrabold">
-          Travel <br />
+          Travel -<br />
           <span className="text-green-600">Lover</span>{" "}
         </p>
         <input
