@@ -1,6 +1,5 @@
 import type React from "react";
 import bgImage from "../assets/images/Rectangle 1.png";
-// import navIcon from "../assets/images/logo.png";
 import { NavLink } from "react-router";
 const Navbar: React.FC = () => {
   return (

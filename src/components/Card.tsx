@@ -28,5 +28,4 @@ const Card: React.FC<CardProps> = ({ singleData }) => {
     </div>
   );
 };
-
 export default Card;
